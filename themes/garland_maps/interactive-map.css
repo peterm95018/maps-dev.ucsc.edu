@@ -1,0 +1,414 @@
+I think I borrowed this from Cornell University.
+It has some good ideas about how to create various settings we might need later.
+
+/********** GENERAL FORMATTING **********/
+
+#maincontent {
+	padding-top: 15px;
+	}
+
+/********** MAP INDEX **********/
+
+#mapsindex {
+	float: left;
+	margin: 15px 0 0 0;
+	}
+
+#mapsindex .maptn {
+	display: block;
+	float: left;
+	margin-right: 14px;
+	font-size: 0.69em;
+	line-height: 1.5em;
+	}
+	
+#mapsindex #last {
+	margin-right: 0;
+	}
+	
+#mapsindex img {
+	display: block;
+	}
+
+/********** MAP IMAGE **********/
+
+#mapimage {
+	margin-bottom: 15px;
+	}
+
+/********** MAP LINKS **********/
+
+#maplinks {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	color: #666;
+	}
+	
+#maplinks .oddsection, #maplinks .evensection {
+	float: right;
+	padding-bottom: 15px;
+	}
+
+#maplinks img {
+	display: block;
+	float: left;
+	margin: 5px 0 0 0;
+	position: relative;
+	left: 15px;
+	}
+
+.mapinfo {
+	float: left;
+	margin-left: 15px;
+	width: 265px;
+	}
+	
+#maincontent #maplinks h3 {
+	margin: 0;
+	margin-bottom: 5px;
+	line-height: 1.6em;
+	}
+	
+#maincontent #maplinks ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.69em;
+	}
+	
+#maincontent #maplinks li {
+	float: left;
+	width: 100%;
+	margin: 0;
+	}
+	
+#maincontent #maplinks p {
+	float: left;
+	clear: left;
+	margin: 10px 0 0 0;
+	font-size: 0.69em;
+	line-height: 1.5em;
+	}
+	
+.infoname {
+	float: left;
+	clear: left;
+	width: 70px;
+	}
+	
+.infovalue {
+	font-weight: bold;
+	}
+
+/********** FORMS **********/
+
+.formpair {
+	width: 324px;
+	}
+	
+.formlabel {
+	width: 100px;
+	}
+	
+.forminput {
+	width: 209px;
+	}
+
+/********** LABELS (for State and World Maps) **********/
+
+#statemap, #worldmap {
+	width: 740px;
+	height: 460px;
+	}
+
+#statemap img, #worldmap img {
+	display: none;
+	}
+
+#statemap {
+	background: url(/img/maps/nystate.gif) no-repeat top left;
+	}
+	
+#worldmap {
+	background: url(/img/maps/world.gif) no-repeat top left;
+	}
+	
+ul#maplabels {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	}
+	
+#maplabels li {
+	position: absolute;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 0.8em;
+	}
+	
+#maplabels li a {
+	line-height: 0.8em;
+	border: none;
+	font-size: 0.65em;
+	color: #333;
+	text-decoration: none;
+	}
+	
+#maplabels a:hover {
+	background: #fc0;
+	}
+	
+#maplabels span {
+	display: none;
+	}
+	
+li#ithaca {
+	top: 429px;
+	margin-left: -220px;
+	}
+
+li#nyc {
+	top: 433px;
+	margin-left: -132px;
+	}
+	
+li#washington {
+	top: 453px;
+	margin-left: -148px;
+	}
+	
+li#shoals {
+	top: 400px;
+	margin-left: -105px;
+	width: 4em;
+	}
+	
+li#geneva {
+	top: 380px;
+	margin-left: -115px;
+	}
+	
+li#puertorico {
+	top: 483px;
+	margin-left: -132px;
+	}
+	
+li#doha {
+	top: 465px;
+	margin-left: 100px;
+	}
+	
+li#rome {
+	top: 425px;
+	margin-left: 20px;
+	}
+	
+li#stateithaca {
+	top: 460px;
+	margin-left: -140px;
+	}
+	
+#stateithaca a {
+	display: block;
+	width: 110px;
+	height: 45px;
+	}
+	
+li#statenyc {
+	top: 635px;
+	margin-left: 190px;
+	}
+	
+#statenyc a {	
+	display: block;
+	width: 130px;
+	height: 55px;
+	}
+
+#stateithaca a:hover, #statenyc a:hover {
+	background: none;
+	}
+	
+/********** INTERACTIVE **********/
+
+h1 span {
+	font-size: .4em;
+	}
+
+#map_interface {
+	width: 960px;
+
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin-bottom: 20px;
+	float: left;
+	}
+	
+#CUmap {
+ 	width: 700px; 
+
+	height: 460px;
+	border: 2px solid white;
+	}
+
+#maincontent ul.bubble_list {
+	list-style-image: none;
+	list-style-type: none;
+	overflow: auto;
+	margin: 0 0 15px 0;
+	border: 1px solid #ddd;
+	padding: 0 0 0 8px;
+	}
+	
+#maincontent #map form {
+	border: none;
+	}	
+	
+#locations {
+ 	float: right; 
+	width: 240px;
+	height: 399px;
+	height: 464px;
+	position: relative;
+	}	
+	
+#locations h3 {
+
+	background: transparent url(/img/layout/icon_magnify_24x24.jpg) top left no-repeat;
+	padding: 2px 0 3px 30px;
+	width: auto;
+	}
+	
+p#resetLocationList {
+	font-size: .75em;
+	}	
+
+#maincontent #locations .scrollingList {
+	list-style: none;
+	
+	 height: 350px; 
+	overflow: auto;
+	margin: 10px 0 2px 0;
+ 	position: absolute;
+	bottom: 0; 
+	border: none;
+	padding: 0;
+	width: 240px;
+	}
+
+#maincontent #locations .scrollingList label {
+	display: inline;
+	padding-left: 0;
+	}
+
+#maincontent #locations .scrollingList li {
+	padding: 0 0 .2em 0;
+	margin: 0 0 5px 0;
+	
+	}
+
+#overlays {
+	
+	background-color: #d9e3e6;
+	background-color: #9b9fa2;
+	border-top: 3px solid #8d9093;
+    background-color: #6e8291;
+    border-top: 2px solid #61707c;
+	float: left;
+	width: 960px;
+	padding-bottom: 5px;
+	}
+	
+#overlays h4 {
+	display: inline;
+	color: #fff;
+	float: left;
+	margin: 5px 0 0 8px;
+	}	
+	
+#maincontent #overlays ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-image: none;
+	list-style-type: none;
+	}
+
+#maincontent #overlays ul li {
+	display: inline;
+	font-size: .80em;
+	margin: 3px;
+	color: #fff;
+	padding: 0;
+	width: auto;
+	float: left;
+	background-image:none;
+	}
+	
+#maincontent #overlays ul li.disabled {
+	font-style: italic;
+	color: #ccc;
+	}
+	
+#maincontent #overlays ul li.disabled:hover {
+	    background-color: #6e8291;
+	}	
+	
+#overlays label {
+	cursor: pointer;
+	padding: 0 8px 0 2px;
+	line-height: 2.5em;
+	display: block;
+	}	
+	
+#maincontent #overlays ul li input {
+	position: relative;
+	margin-top: -2px;
+	vertical-align: middle;
+	}	
+
+#overlays ul li:hover {
+	background-color: #61707c;
+	}		
+	
+
+#maincontent form#directions {
+	border: none;
+	}	
+
+#search_form {
+	width: 240px;
+	}
+
+#searchMaps {
+	width: 180px;
+	}
+
+body#interactive #content {
+	width: 960px;
+	} 
+	
+#maincontent form#directions {
+	float: none;
+	}
+	
+	
+	ul li, ul.menu li, .item-list ul li, li.leaf {
+	-moz-background-clip:border;
+	-moz-background-origin:padding;
+	-moz-background-size:auto auto;
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("menu-leaf.gif");
+	background-position:1px 0.35em;
+	background-repeat:no-repeat;
+	list-style-image:none;
+	list-style-type:none;
+	padding-bottom:0.2em;
+	padding-left:1.5em;
+	padding-right:0;
+	padding-top:0;
+	}

@@ -1,0 +1,27 @@
+; $Id: garland.info,v 1.5 2007/07/01 23:27:32 goba Exp $
+name = Garland Maps
+description = Tableless, recolorable, multi-column, fluid width theme (default).
+version = VERSION
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+stylesheets[all][] = maps.css
+; load my maps.css last
+
+;scripts[] = checkbox_test.js
+;scripts[] = script.js
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar top
+regions[right_bottom] = Right sidebar bottom
+;regions[homemap] = Home Map
+regions[content] = Content
+regions[footer] = Footer
+
+; Information added by drupal.org packaging script on 2010-03-04
+version = "6.16"
+project = "drupal"
+datestamp = "1267662008"
+

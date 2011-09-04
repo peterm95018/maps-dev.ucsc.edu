@@ -1,0 +1,47 @@
+/* psm zebra striping on the A-Z glossary view */
+
+/* overrides for style.css settings used in A-Z index */
+th.active img {
+  display: inline;
+}
+tr.even, tr.odd {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.1em 0.6em;
+}
+tr.drag {
+  background-color: #fffff0;
+}
+tr.drag-previous {
+  background-color: #ffd;
+}
+td.active {
+  /* background-color: ; */
+}
+td.checkbox, th.checkbox {
+  text-align: center;
+}
+tbody {
+  border-top: 1px solid #ccc;
+}
+tbody th {
+  border-bottom: 1px solid #ccc;
+}
+thead th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+
+.view-id-glossary tr.even {
+background-color:  #F2F0E4;
+padding: 5px 0px 5px 0px;
+font-size: 110%;
+}
+
+.view-id-glossary tr.odd {
+background-color: #E9E6D6;
+padding: 5px 0px 5px 0px;
+font-size: 110%;
+}

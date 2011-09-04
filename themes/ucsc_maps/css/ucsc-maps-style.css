@@ -1,0 +1,291 @@
+/* @override http://maps-dev.ucsc.edu/sites/maps-dev.ucsc.edu/themes/ucsc_maps/css/ucsc-maps-style.css?j */
+
+/* $Id: local-sample.css,v 1.1.2.1 2010/01/11 00:08:12 sociotech Exp $ */
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom CSS and CSS overrides in this file and  */
+/* rename it local.css.  By restricting your CSS changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.  You can also */
+/* use a local-rtl.css file for the equivalent in RTL.     */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom CSS to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Clear cached data at admin/settings/performance */
+
+.dark-block {
+	background-color: #333;
+	color: #ddd;
+}
+
+/* this is the new tan color on the www.ucsc.edu site */
+/* used in the navigation and footer */
+.light-block {
+	background-color: #F2F0E4;
+	padding: 10px 0px 5px 0px;
+	font-size: 125%;
+}
+
+.light-block-footer p {
+	background-color: #F2F0E4;
+	font-size: 110%;
+	margin: .5em 0px;
+}
+
+div.psm-maps-search {
+	/* padding: 10px 0px 5px 0px; */
+}
+
+.destination-maps {
+	font-size: larger;
+	margin-bottom: 10px;
+}
+
+/* Reduce the height of the title block
+ * But, don't override the 1.5em spacing on other blocks
+ */
+#block-block-2 {
+float: left;
+margin-bottom: .25em;
+width: 100%;
+}
+
+#prefece-top {
+float: left;
+margin-bottom: .25em;
+width: 100%;
+}
+
+
+
+/* block usually has 1.5em bottom margin. This override changes
+ * all blocks
+ */
+.block {
+float: left;
+margin-bottom: 1.0em;
+width: 100%;
+}
+
+#search-block-form .form-text { color: #888888; }
+
+div.maps-title {
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 175%;
+}
+
+/* put a light gray border around the map */
+.openlayers-container {
+	border: 1px solid #ccc;
+}
+
+/* PSM Common Maps comes from secondary links
+ * See if we can get blocks to look like blockswitcher 
+ * We theme the block h2 titles to match the layer switcher
+ * within the map. We need one entry per block area.
+*/
+#block-menu-secondary-links h2.block-title {
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+padding:5px 5px 5px 5px;
+color:#fff;
+/* background:#24384c url(images/sprite.png) -365px -90px no-repeat; */
+background:#24384c;
+font-size:15px;
+font-weight:bold;
+}
+
+/* Map Layers Block
+ *
+ */
+#block-openlayers_plus-blockswitcher h2.block-title {
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+padding:5px 5px 5px 5px;
+color:#fff;
+background:#24384c url(images/sprite.png) -365px -90px no-repeat;
+background:#24384c;
+font-size:15px;
+font-weight:bold;
+}
+
+/* Campus Facilities Block
+ *
+ */
+#block-views-buildings_dropdown-block_1 h2.block-title {
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+padding:5px 5px 5px 5px;
+color:#fff;
+background:#24384c url(images/sprite.png) -365px -90px no-repeat;
+background:#24384c;
+font-size:15px;
+font-weight:bold;
+}
+
+/* Campus Departments Block
+ *
+ */
+#block-views-departments_dropdown-block_1 h2.block-title {
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+padding:5px 5px 5px 5px;
+color:#fff;
+background:#24384c url(images/sprite.png) -365px -90px no-repeat;
+background:#24384c;
+font-size:15px;
+font-weight:bold;
+}
+
+/* this is the border on the right side column
+div.sidebar-last-inner {
+	border: 1px solid #ccc;
+}
+*/
+
+
+/* Blockswitcher */
+#block-openlayers_plus-blockswitcher { display:block; }
+div.navbar #block-openlayers_plus-blockswitcher,
+div.openlayers-map #block-openlayers_plus-blockswitcher { display:block; }
+
+div.openlayers-blockswitcher span.key {
+  width:15px !important;
+  height:15px !important;
+  }
+
+div.openlayers-blockswitcher h2.layers-title,
+div.openlayers-blockswitcher div.form-item {
+  line-height:15px;
+  padding:5px 5px 4px 20px;
+  border-bottom:1px solid #e8e8e8;
+  background:transparent;
+  }
+
+div.openlayers-blockswitcher div.radio {
+  padding-left:40px;
+  background:url(images/sprite.png) 15px 0px no-repeat;
+  cursor:pointer;
+  }
+
+div.openlayers-blockswitcher div.activated { background-position:15px -25px; }
+
+div.openlayers-blockswitcher h2.layers-title,
+div.openlayers-blockswitcher div.form-item label { font-size:11px; }
+
+div.openlayers-blockswitcher h2.layers-title {
+  background:#fff;
+  font-weight:bold;
+  }
+
+/**
+ * Within map.
+ */
+div.openlayers-map #block-openlayers_plus-blockswitcher {
+  -moz-border-radius-bottomright:5px;
+  -webkit-border-bottom-right-radius:5px;
+  padding:0px;
+  }
+
+/* 
+ * PSM - prevents the expanded version which is too large 
+
+  div.openlayers-map #block-openlayers_plus-blockswitcher.expanded {
+    width:240px;
+    bottom:0px;
+    }
+*/
+
+  div.openlayers-map #block-openlayers_plus-blockswitcher h2.block-title {
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-right-radius:5px;
+
+    padding:5px 10px 5px 40px;
+    color:#fff;
+    background:#24384c url(images/sprite.png) -365px -90px no-repeat;
+    font-size:15px;
+    font-weight:bold;
+    }
+
+  div.openlayers-map #block-openlayers_plus-blockswitcher.expanded h2.block-title {
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    }
+
+  div.openlayers-map #block-openlayers_plus-blockswitcher div.block-content {
+    position:absolute;
+    top:30px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow:auto;
+    padding:0px;
+    }
+
+  div.openlayers-map div.openlayers-blockswitcher h2.layers-title,
+  div.openlayers-map div.openlayers-blockswitcher div.form-item { padding-left:10px; }
+
+  div.openlayers-map div.openlayers-blockswitcher div.radio {
+    padding-left:30px;
+    background-position:5px 0px;
+    }
+
+    div.openlayers-map div.openlayers-blockswitcher div.activated { background-position:5px -25px; }
+
+  div.openlayers-map div.openlayers-blockswitcher h2.layers-title { background:#f8f8f8; }
+
+
+/* psm zebra striping on the A-Z glossary view */
+
+/* overrides for style.css settings used in A-Z index */
+th.active img {
+  display: inline;
+}
+tr.even, tr.odd {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.1em 0.6em;
+}
+tr.drag {
+  background-color: #fffff0;
+}
+tr.drag-previous {
+  background-color: #ffd;
+}
+td.active {
+  /* background-color: ; */
+}
+td.checkbox, th.checkbox {
+  text-align: center;
+}
+tbody {
+  border-top: 1px solid #ccc;
+}
+tbody th {
+  border-bottom: 1px solid #ccc;
+}
+thead th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+
+.view-id-glossary tr.even {
+background-color:  #F2F0E4;
+padding: 5px 0px 5px 0px;
+font-size: 110%;
+}
+
+.view-id-glossary tr.odd {
+background-color: #E9E6D6;
+padding: 5px 0px 5px 0px;
+font-size: 110%;
+}
+
+
